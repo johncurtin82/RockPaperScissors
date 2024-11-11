@@ -5,7 +5,7 @@ const whoWon = document.getElementById("whoWon");
 
 function playGame(playerClick){
     const computerPick = choices[Math.floor(Math.random() * 3 )];
-    console.log(computerPick);
+    //console.log(computerPick);
     let score = "";
 
     if (playerClick == computerPick){
@@ -33,5 +33,5 @@ function playGame(playerClick){
     playerChoice.textContent = `You picked ${playerClick}`;
     computerChoice.textContent = `The Computer picked ${computerPick}`;
     whoWon.textContent = score;
-        console.log(score);    
+       console.log(score);    
 }
